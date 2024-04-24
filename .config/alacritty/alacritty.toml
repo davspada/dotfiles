@@ -1,0 +1,10 @@
+import = [
+    "/home/davide/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+#[font]
+#normal = { family = "ZedMono", style = "Regular" }
+#size = 12
