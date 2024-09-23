@@ -1,5 +1,5 @@
 import = [
-    "/home/davide/.config/alacritty/themes/themes/catppuccin_mocha.toml"
+    "/home/davspada/.config/alacritty/catppuccin-mocha.toml"
 ]
 
 [env]
