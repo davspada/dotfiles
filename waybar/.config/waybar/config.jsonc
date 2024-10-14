@@ -90,7 +90,7 @@
 			"",
 			""
 		],
-		"tooltip": false
+		"tooltip": true
 	},
 
 	"clock#time": {
@@ -151,12 +151,12 @@
 
 	"sway/window": {
 		"format": "{}",
-		"max-length": 30,
+		"max-length": 100,
 		"tooltip": false
 	},
 
 	"sway/workspaces": {
-		"disable-scroll-wraparound": true,
+		"disable-scroll-wraparound": false,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
 		"format": "{name}"
