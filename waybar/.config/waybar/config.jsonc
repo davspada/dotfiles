@@ -159,7 +159,7 @@
 		"disable-scroll-wraparound": false,
 		"smooth-scrolling-threshold": 4,
 		"enable-bar-scroll": true,
-		"format": "{name}"
+		"format": "{icon}"
 	},
 
 	"pulseaudio": {
@@ -210,8 +210,8 @@
 	},
 
 	"tray": {
-		"icon-size": 18
-		//"spacing": 10
+		"icon-size": 18,
+		"spacing": 10
 	},
 
 	"custom/arrow1": {
