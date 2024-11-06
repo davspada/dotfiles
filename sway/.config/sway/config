@@ -212,6 +212,10 @@ bindsym $mod+r mode "resize"
     # Special key to take a screenshot with grim
     bindsym Print exec grim
 
+#laptop swipe gestures
+bindgesture swipe:right workspace prev
+bindgesture swipe:left workspace next
+
 # capture all screens to clipboard    
 bindsym Shift+Print exec grim - | wl-copy    
     
