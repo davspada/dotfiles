@@ -1,3 +1,6 @@
+import = [
+    "/home/davspada/.config/alacritty/catppuccin-mocha.toml"
+]
 
 [env]
 TERM = "xterm-256color"
@@ -5,8 +8,3 @@ TERM = "xterm-256color"
 [font]
 normal = { family = "JetBrains Mono", style = "Regular" }
 size = 12
-
-[general]
-import = [
-    "/home/davspada/.config/alacritty/catppuccin-mocha.toml"
-]

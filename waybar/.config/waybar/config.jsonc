@@ -61,7 +61,7 @@
 		"clock#date",
 		"custom/arrowP",
 		"clock#time",
-		"custom/number"
+		"custom/power"
 	],
 
 	// Modules
@@ -215,7 +215,7 @@
 		"icon-size": 18,
 		"spacing": 10
 	},
-    "custom/number": {
+    "custom/power": {
       "format": "⏻",
 	"tooltip": false,	
       "on-click": "rofi -show powermenu -modi powermenu:$HOME/scripts/rofi-power-menu"

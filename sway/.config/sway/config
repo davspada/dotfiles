@@ -37,6 +37,7 @@ output HDMI-A-1 scale 2 position 0,0
 # Example configuration:
 #lock screen and idle config
 bindsym $mod+ctrl+l exec swaylock --config  ~/.config/swaylock/config
+
 exec swayidle -w \
           timeout 300 'swaylock -f  \
           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
@@ -213,8 +214,8 @@ bindsym $mod+r mode "resize"
     bindsym Print exec grim
 
 #laptop swipe gestures
-bindgesture swipe:right workspace prev
-bindgesture swipe:left workspace next
+bindgesture swipe:left workspace prev
+bindgesture swipe:right workspace next
 
 # capture all screens to clipboard    
 bindsym Shift+Print exec grim - | wl-copy    
