@@ -39,12 +39,11 @@ output HDMI-A-1 scale 2 position 0,0
 bindsym $mod+ctrl+l exec swaylock --config  ~/.config/swaylock/config
 
 exec swayidle -w \
-          timeout 300 'swaylock -f  \
+          timeout 500 'swaylock -f -c 000000' \
           timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
           before-sleep 'swaylock -f -c 000000'
 
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
+#This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
@@ -71,6 +70,7 @@ exec swayidle -w \
 
     # Kill focused window
     bindsym $mod+BackSpace kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
@@ -218,10 +218,17 @@ bindgesture swipe:left workspace prev
 bindgesture swipe:right workspace next
 
 # capture all screens to clipboard    
-bindsym Shift+Print exec grim - | wl-copy    
-    
+bindsym Shift+Print exec grim - | wl-copy   
+
+#capture all screens 
+bindsym $mod+p exec grim    
+
 # capture the specified screen area to clipboard    
 bindsym Shift+Alt+Print exec grim -g "$(slurp)" - | wl-copy
+bindsym $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy
+
+# capture the specified screen area
+bindsym $mod+Alt+p exec grim -g "$(slurp)"
 
 # touchpad
 input "type:touchpad" {
