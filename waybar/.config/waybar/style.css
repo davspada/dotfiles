@@ -86,7 +86,8 @@
 #disk,
 #user,
 #mpris,
-#power-profiles-daemon {
+#power-profiles-daemon,
+#dunst_pause_toggler{
 	padding-left: 8pt;
 	padding-right: 8pt;
 }
@@ -97,7 +98,8 @@
 #pulseaudio,
 #temperature,
 #language,
-#power-profiles-daemon{
+#power-profiles-daemon,
+#dunst_pause_toggler{
     background: @purple;
 	color: @white;
 }

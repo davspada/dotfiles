@@ -55,7 +55,8 @@
 		"custom/arrowB",
 		"backlight",
 		"custom/arrowP",
-		"sway/language",
+		//"sway/language",
+		"custom/dunst_pause_toggler",
 		"custom/arrowB",
 		"tray",
 		"clock#date",
@@ -70,8 +71,16 @@
         "format-icons": {
             "activated": "",
             "deactivated": ""
-        }
-    },
+        	}
+    	},
+	"custom/dunst_pause_toggler": {
+		"format": "{}",
+		"on-click": "dunstctl set-paused toggle",
+		"exec-on-event": "$HOME/scripts/dnd.sh",
+		"exec": "$HOME/scripts/dnd.sh",
+		"interval": "once",
+		"tooltip": false
+	},
 	"battery": {
 		"interval": 10,
 		"states": {
