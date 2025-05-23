@@ -15,4 +15,5 @@ else
 end
 # <<< conda initialize <<<
 
-eval (tmuxifier init - fish)
+#eval (tmuxifier init - fish)
+zoxide init fish | source

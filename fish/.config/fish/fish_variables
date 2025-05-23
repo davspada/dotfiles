@@ -1,6 +1,7 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR --export JOLIE_HOME:/usr/lib/jolie
+SETUVAR --path TMUXIFIER_PATH:/home/davspada/\x2etmuxifier
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:6c7086
 SETUVAR fish_color_cancel:f38ba8
